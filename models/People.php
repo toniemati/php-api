@@ -90,4 +90,8 @@ class People {
 
     return ($stmt->execute()) ? true : false;
   }
+
+  public static function destroy() {
+    echo 'destroy method';
+  }
 }

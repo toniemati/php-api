@@ -9,3 +9,5 @@ RewriteRule ^api/peoples$ api/peoples/index.php [NC,L]
 RewriteRule ^api/peoples/(\d+)$ api/peoples/show.php?id=$1 [NC,L]
 
 RewriteRule ^api/peoples/store$ api/peoples/store.php
+
+RewriteRule ^api/peoples/update/(\d+)$ api/peoples/update.php?id=$1
