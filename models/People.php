@@ -92,6 +92,17 @@ class People {
   }
 
   public static function destroy() {
-    echo 'destroy method';
+    
+    $sql = 'DELETE FROM
+        peoples
+      WHERE
+        id = :id
+    ';
+
+    $stmt = self::$conn->prepare($sql);
+
+    $stmt->bindParam(':id', self::$id);
+
+    return ($stmt->execute()) ? true : false;
   }
 }

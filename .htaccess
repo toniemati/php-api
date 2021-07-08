@@ -11,3 +11,5 @@ RewriteRule ^api/peoples/(\d+)$ api/peoples/show.php?id=$1 [NC,L]
 RewriteRule ^api/peoples/store$ api/peoples/store.php
 
 RewriteRule ^api/peoples/update/(\d+)$ api/peoples/update.php?id=$1
+
+RewriteRule ^api/peoples/destroy/(\d+)$ api/peoples/destroy.php?id=$1
