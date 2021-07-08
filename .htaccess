@@ -1,0 +1,11 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.php -f 
+
+RewriteRule ^api/peoples$ api/peoples/index.php [NC,L]
+
+RewriteRule ^api/peoples/(\d+)$ api/peoples/show.php?id=$1 [NC,L]
+
+RewriteRule ^api/peoples/store$ api/peoples/store.php
